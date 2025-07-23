@@ -1,0 +1,200 @@
+/* login.css */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	
+	background-image: url('/images/hero-background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+    line-height: 1.6;
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+	padding-top: 5vh;
+}
+
+.site-header {
+    background-color: midnightblue;
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#nav-logo {
+    height: auto;
+    width: auto;
+    max-height: 250px;
+    margin-bottom: 15px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-right {
+	flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    border-bottom-color: white;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+::selection {
+    background-color: midnightblue;
+    color: white;
+}
+
+
+/* CSS BUTTONS */
+
+.btn-custom {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login, .btn-register {
+    background-color: white;
+    color: midnightblue;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-accedi {
+    width: 5em;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+	margin-top: 20px;
+}
+
+.btn-accedi:hover {
+    background-color: #0056b3;
+}
+
+
+/* CSS .login-container */
+
+.login-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: white;
+	width: 500px;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.login-container p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.login-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.login-container input {
+	margin-bottom: 5px;
+}
+
+
+/* CSS FOOTER */
+
+footer {
+	background-color: midnightblue;
+	padding: 2vh;
+	margin-top: 35px;
+	text-align: center;
+}
+
+footer span {
+	color: white;
+}
+
+footer p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.bottom-nav-links a {
+	color: white;
+	text-align: center;
+}

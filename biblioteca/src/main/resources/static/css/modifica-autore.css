@@ -1,0 +1,260 @@
+/* modifica-autore.css */
+
+html {
+	height: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+	overflow-y: auto;
+	display:flex;
+	flex-direction: column;
+	min-height:100vh;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+h2 {
+	text-align: left;
+	margin-bottom:20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid midnightblue;
+}
+
+ul {
+	list-style-type: none;
+	margin-bottom: 125px;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+.user-greeting p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+.site-header {
+    background-color: midnightblue;
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#nav-logo {
+    height: auto;
+    width: auto;
+    max-height: 250px;
+    margin-bottom: 15px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.nav-left{
+    flex: 1;
+}
+
+.nav-center {
+	flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-right {
+	flex: 1;
+    display: flex;
+    justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    border-bottom-color: white;
+}
+
+.user-actions {
+    display: flex;
+	align-items: center;
+    gap: 10px;
+}
+
+::selection {
+    background-color: midnightblue;
+    color: white;
+}
+
+
+/* CSS BUTTONS */
+
+.btn-custom {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-logout {
+    background-color: white;
+    color: midnightblue;
+}
+
+.btn-logout:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-salva {
+    padding: 12px 25px;
+    border: none;
+    background-color: #22229c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.btn-salva:hover {
+    background-color: midnightblue;
+}
+
+
+/* CSS .edit-autore */
+
+.edit-autore {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    width: 1200px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-layout-container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.form-column-left {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-column-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.current-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+	margin-top: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.form-actions {
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+
+/* CSS FOOTER */
+
+footer {
+	background-color: midnightblue;
+	padding: 2vh;
+	text-align: center;
+}
+
+footer span {
+	color: white;
+}
+
+footer p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.bottom-nav-links a {
+	color: white;
+	text-align: center;
+}

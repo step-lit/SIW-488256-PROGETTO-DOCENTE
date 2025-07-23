@@ -1,0 +1,1 @@
+SELECT setval('credentials_seq', (SELECT MAX(id) FROM credentials), true);

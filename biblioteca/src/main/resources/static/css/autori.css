@@ -1,0 +1,260 @@
+/* autori.css */
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	background-color: #f0f0f0;
+	line-height: 1.6;
+	margin: 0;
+	overflow-y: auto;
+	display:flex;
+	flex-direction: column;
+	min-height:100vh;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+h2 {
+	text-align: left;
+	margin-bottom:20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid midnightblue;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+.user-greeting p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+.site-header {
+	background-color: midnightblue;
+	padding: 20px 0;
+	color: white;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#nav-logo {
+	height: auto;
+	width: auto;
+	max-height: 250px;
+	margin-bottom: 15px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.nav-left {
+	flex: 1;
+}
+
+.nav-center {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+	gap: 30px;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: normal;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.3s ease;
+}
+
+.nav-links a:hover {
+	border-bottom-color: white;
+}
+
+.user-actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+::selection {
+	background-color: midnightblue;
+	color: white;
+}
+
+
+/* CSS BUTTONS */
+
+.btn-custom {
+	padding: 10px 20px;
+	border: 2px solid white;
+	border-radius: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn-login, .btn-logout,
+.btn-add-libro, .btn-register {
+	background-color: white;
+	color: midnightblue;
+}
+
+.btn-login:hover, .btn-logout:hover,
+.btn-add-libro:hover, .btn-register:hover {
+	background-color: transparent;
+	color: white;
+}
+
+.btn-add-autore {
+	background-color: #22229c;
+	color: white;
+}
+
+.btn-add-autore:hover {
+	background-color: midnightblue;
+	color: white;
+}
+
+
+/* CSS .area-autori-text */
+
+.area-autori-text {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: white;
+	width: 1200px;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.autori-container {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 20px;
+	width: 100%;
+}
+
+.autore-item {
+	background-color: #f8f9fa;
+	border: 1px solid #ccc;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+	width: calc(20% - 16px);
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.autore-item > a {
+    display: block;
+    aspect-ratio: 163 / 250;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.autore-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.autore-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.autore-item-body {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: left;
+}
+
+.autore-title {
+	font-size: 1.05rem;
+	font-weight: 600;
+	margin: 0 0 10px 0;
+	flex-grow: 1;
+}
+
+.autore-actions .btn-dettagli {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #22229c;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	transition: background-color 0.2s ease;
+	margin-top: auto;
+}
+
+.autore-actions .btn-dettagli:hover {
+	background-color: midnightblue;
+}
+
+
+/* CSS FOOTER */
+
+footer {
+	background-color: midnightblue;
+	padding: 2vh;
+	text-align: center;
+}
+
+footer span {
+	color: white;
+}
+
+footer p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.bottom-nav-links a {
+	color: white;
+	text-align: center;
+}

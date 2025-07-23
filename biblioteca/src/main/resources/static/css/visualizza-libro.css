@@ -1,0 +1,408 @@
+/* visualizza-libro.css */
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	background-color: #f0f0f0;
+	line-height: 1.6;
+	margin: 0;
+	overflow-y: auto;
+	display:flex;
+	flex-direction: column;
+	min-height:100vh;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+h2 {
+	text-align: left;
+	margin-bottom:20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid midnightblue;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+.user-greeting p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+.site-header {
+	background-color: midnightblue;
+	padding: 20px 0;
+	color: white;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#nav-logo {
+	height: auto;
+	width: auto;
+	max-height: 250px;
+	margin-bottom: 15px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.nav-left {
+	flex: 1;
+}
+
+.nav-center {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+	gap: 30px;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: normal;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.3s ease;
+}
+
+.nav-links a:hover {
+	border-bottom-color: white;
+}
+
+.user-actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+::selection {
+	background-color: midnightblue;
+	color: white;
+}
+
+
+/* CSS BUTTONS */
+
+.btn-custom {
+	padding: 10px 20px;
+	border: 2px solid white;
+	border-radius: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn-login, .btn-logout,
+.btn-add-libro, .btn-register {
+	background-color: white;
+	color: midnightblue;
+}
+
+.btn-login:hover, .btn-logout:hover,
+.btn-add-libro:hover, .btn-register:hover {
+	background-color: transparent;
+	color: white;
+}
+
+.btn-add-libro {
+	background-color: #22229c;
+	color: white;
+}
+
+.btn-add-libro:hover {
+	background-color: midnightblue;
+	color: white;
+}
+
+
+/* CSS .visualizza-libro-container */
+
+.visualizza-libro-container {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 1200px;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	text-align: center;
+}
+
+.visualizza-libro-container h2 {
+	text-align: left;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid midnightblue;
+}
+
+.libro-details {
+    display: flex;
+    gap: 40px;
+}
+
+.libro-cover {
+    flex: 0 0 350px;
+	aspect-ratio: 163 / 250;
+}
+
+.libro-cover .carousel,
+.libro-cover .carousel-inner,
+.libro-cover .carousel-item {
+    height: 100%;
+}
+
+.libro-cover .carousel-item img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    filter: invert(1) grayscale(100);
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.carousel .carousel-control-prev:hover,
+.carousel .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.libro-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.libro-info h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.libro-info .info-item {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.libro-info .info-item strong {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.libro-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.libro-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.libro-edit {
+	margin-left: 20px;
+}
+
+.libro-edit a {
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.libro-edit a:hover {
+	text-decoration: underline;
+}
+
+.star-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.rating-avg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.rating-count {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+
+
+/* CSS .recensioni-section */
+
+.recensioni-section {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recensioni-section h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid midnightblue;
+}
+
+.no-recensioni {
+    text-align: center;
+    padding: 20px;
+}
+
+.recensioni-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recensione-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.recensione-canc-btn {
+	display:block;
+	margin-top: 10px;
+	text-align: right;
+	text-decoration: none;
+}
+
+.recensione-canc-btn:hover {
+	text-decoration: underline;
+}
+
+.recensione-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.recensione-header-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.recensione-voto {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	font-size: 0.9rem;
+	color: #333;
+	gap: 5px;
+}
+
+.recensione-voto .star-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+.recensione-titolo {
+	font-weight: bold;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.recensione-voto .rating-vote {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.recensione-autore {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.recensione-testo {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+
+/* CSS FOOTER */
+
+footer {
+	background-color: midnightblue;
+	padding: 2vh;
+	text-align: center;
+}
+
+footer span {
+	color: white;
+}
+
+footer p {
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.bottom-nav-links a {
+	color: white;
+	text-align: center;
+}
