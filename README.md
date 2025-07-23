@@ -2,5 +2,5 @@
 
 ---
 - **Autore**: Stefano Strambi
-- **Titolo**: Progetto di Sistemi Informativi su Web assegnato dal docente
+- **Titolo**: Progetto SiwBooks di Sistemi Informativi su Web assegnato dal docente
 - **Data**: Luglio 2025
