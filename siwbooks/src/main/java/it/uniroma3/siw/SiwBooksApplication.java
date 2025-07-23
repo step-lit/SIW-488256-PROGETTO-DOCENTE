@@ -6,10 +6,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-public class BibliotecaApplication {
+public class SiwBooksApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BibliotecaApplication.class, args);
+		SpringApplication.run(SiwBooksApplication.class, args);
 	}
 
 }

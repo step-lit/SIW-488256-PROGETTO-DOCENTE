@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>it.uniroma3</groupId>
-	<artifactId>biblioteca</artifactId>
+	<artifactId>siwbooks</artifactId>
 	<version>1.0</version>
-	<name>biblioteca</name>
+	<name>siwbooks</name>
 	<description>Progetto assegnato dal docente del corso Sistemi Informativi su Web</description>
 	<url/>
 	<licenses>
